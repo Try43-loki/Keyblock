@@ -92,3 +92,31 @@ const heroSection = new Swiper(".hero-section", {
   //   el: ".swiper-scrollbar",
   // },
 });
+const swiperReview = new Swiper(".swiper-review", {
+  // Optional parameters
+  grabCursor: true,
+  loop: true,
+});
+
+const customerSection = new Swiper(".customer-section", {
+  // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    dynamicBullets: true,
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next-review",
+    prevEl: ".swiper-button-prev-review",
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+});

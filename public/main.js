@@ -14,4 +14,4 @@ allBtn.forEach((e) => {
     list.classList.toggle("h-[250px]");
   });
 });
-console.log(allBtn);
+// modal return

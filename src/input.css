@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card-component {
+  @apply w-[200px] overflow-hidden bg-white rounded-t-lg pb-4 relative hover:-translate-y-3 transition-all duration-200 ease-linear;
+}
+.btn-cart {
+  @apply w-full px-3 py-2 text-sm text-white font-semibold rounded-xl bg-blue-500 border-[2px] border-white hover:bg-white hover:text-blue-500 hover:border-blue-500 transition-colors ease-linear duration-100 active:text-black active:border-black;
+}
+.btn-view-all {
+  @apply px-6 py-2 rounded-lg text-center text-white font-semibold bg-blue-500 shadow-md shadow-blue-500/50 m-auto relative hover:text-blue-500 hover:bg-white transition-colors ease-linear duration-200 active:text-black;
+}
+.card-normal {
+  @apply overflow-hidden bg-white rounded-t-lg pb-4 relative hover:-translate-y-3 transition-all duration-200 ease-linear;
+}
+.eye {
+  @apply cursor-pointer size-7 rounded-md bg-white hover:bg-black hover:text-white active:scale-90 transition-all p-1 delay-100 duration-300 ease-linear grid place-content-center text-sm absolute top-[-100%] group-hover:top-2 right-10;
+}
+.heart {
+  @apply cursor-pointer size-7 rounded-md  hover:bg-pink-400 hover:text-white active:scale-90 transition-all p-1 duration-300 ease-linear grid place-content-center text-sm absolute  group-hover:top-2 right-2;
+}
+.nav-order {
+  @apply size-8  grid place-content-center bg-white rounded-md hover:bg-black hover:-translate-y-1 hover:shadow-md  transition-all ease-linear duration-200 active:bg-white;
+}
+.nav-order-a {
+  @apply transition-all ease-linear duration-200 rounded-md group-hover:text-xl group-hover:text-white;
+}
+.btn-slider {
+  @apply size-7 rounded-md text-white border-[1.5px] border-white hover:bg-white hover:shadow-md hover:shadow-white hover:text-black transition-colors ease-linear duration-200 active:size-6;
+}
+.btn-explore {
+  @apply px-4 py-1 rounded-sm bg-white text-black mt-1 text-sm font-semibold hover:bg-black hover:text-white border-[1.5px] hover:border-white transition-all ease-linear duration-200;
+}
+.btn-review {
+  @apply size-7 rounded-md text-blue-500 border-[1.5px] border-blue-500 hover:bg-blue-500 hover:shadow-md hover:shadow-blue-500 hover:text-white transition-colors ease-linear duration-200 active:size-6;
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | KeyBlock</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body class="bg-[#F1F1F1]">
+    <header
+      class="relative w-full h-[30px] bg-black text-white text-[10px] lg:text-sm md:text-[12px] sm:text-[11px] text-center flex justify-center items-center z-[-10]"
+    >
+      <p>
+        Black Friday Sale For All Keyboard And Free Express Delivery - OFF 60% !
+        <strong> ShopNow</strong>
+      </p>
+      <span
+        class="hidden lg:block md:block sm:block text-white absolute right-[10%] top-1/2 -translate-y-1/2 cursor-pointer"
+        >English <i class="fa-solid fa-chevron-down"></i
+      ></span>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="px-[10%] shadow-lg flex justify-between items-center bg-blue-500 sticky top-0 z-50"
+    >
+      <h1 class="text-xl text-white font-bold cursor-pointer py-3 z-[-1]">
+        <a href="index.html">Keyblock</a>
+      </h1>
+      <ul
+        class="hidden text-white text-sm lg:flex md:flex justify-center items-center gap-8"
+      >
+        <li><a class="btn-navv activee" href="index.html">Home</a></li>
+        <li class="py-3 relative group">
+          <a
+            class="btn-navv opacity-70 group-hover:opacity-100 transition-opacity ease-linear duration-200"
+            href=""
+            >Menu
+            <i
+              class="fa-solid fa-caret-up ml-1 group-hover:rotate-180 transition-transform ease-linear duration-300"
+            ></i>
+          </a>
+          <ul
+            class="absolute top-[48px] shadow-md left-[-16px] h-0 overflow-hidden opacity-0 group-hover:opacity-100 group-hover:h-[108px] transition-all ease-linear duration-300"
+          >
+            <li
+              class="py-2 px-4 w-full text-start bg-blue-500 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer"
+                >Keyboard</a
+              >
+            </li>
+            <li
+              class="py-2 px-4 w-full text-start bg-blue-500 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer"
+                >KeyCap</a
+              >
+            </li>
+            <li
+              class="py-2 px-4 w-full text-start bg-blue-500 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer">USB</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="btn-navv opacity-70 hover:opacity-100 transition-opacity ease-linear duration-200"
+            href="product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            class="btn-navv opacity-70 hover:opacity-100 transition-opacity ease-linear duration-200"
+            href="#getInTouch"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+      <!-- dropdown -->
+      <ul
+        id="dropdown"
+        class="absolute z-[-8] w-full top-[50px] opacity-0 h-0 overflow-hidden lg:hidden md:hidden text-white text-sm flex flex-col items-center gap-0 left-0 transition-all ease-linear duration-500"
+      >
+        <li
+          class="w-full px-[10%] bg-blue-700 hover:bg-blue-500 transition-colors ease-linear duration-200 py-3"
+        >
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="w-full relative group px-[10%] bg-blue-700 hover:bg-blue-500 transition-colors ease-linear duration-200 py-3"
+        >
+          <a href=""
+            >Menu
+            <i
+              class="fa-solid fa-caret-down ml-1 group-hover:rotate-[-90deg] transition-transform ease-linear duration-300"
+            ></i
+          ></a>
+          <ul
+            class="flex justify-center items-center absolute top-0 left-[150px] h-[44px] w-full overflow-hidden opacity-0 group-hover:opacity-100 group-hover:w-[300px] transition-all ease-linear duration-300"
+          >
+            <li
+              class="py-3 px-4 w-full bg-blue-600 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer"
+                >Keyboard</a
+              >
+            </li>
+            <li
+              class="py-3 px-4 w-full bg-blue-600 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer"
+                >KeyCap</a
+              >
+            </li>
+            <li
+              class="py-3 px-4 w-full bg-blue-600 hover:bg-blue-800 transition-colors ease-linear duration-300"
+            >
+              <a href="product.html" class="text-white cursor-pointer">USB</a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="w-full px-[10%] bg-blue-700 hover:bg-blue-500 transition-colors ease-linear duration-200 py-3"
+        >
+          <a href="product.html">Products</a>
+        </li>
+        <li
+          class="w-full px-[10%] bg-blue-700 hover:bg-blue-500 transition-colors ease-linear duration-200 py-3"
+        >
+          <a href="#contact">Contacts</a>
+        </li>
+        <li
+          class="w-full px-[10%] bg-blue-700 transition-colors ease-linear duration-200 py-3"
+        >
+          <ul class="text-white flex justify-start items-center gap-3">
+            <li class="group nav-order">
+              <a href="order.html" class="text-pink-400 nav-order-a"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </li>
+            <li class="group text-black nav-order">
+              <a href="order.html" class="nav-order-a"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li class="group text-blue-400 nav-order">
+              <a href="order.html" class="nav-order-a"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul
+        class="hidden text-white lg:flex md:flex justify-center items-center gap-3"
+      >
+        <li class="group nav-order">
+          <a href="order.html" class="text-pink-400 nav-order-a"
+            ><i class="fa-solid fa-heart"></i
+          ></a>
+        </li>
+        <li class="group text-black nav-order">
+          <a href="order.html" class="nav-order-a"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+        <li class="group text-blue-400 nav-order">
+          <a href="order.html" class="nav-order-a"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </li>
+      </ul>
+      <span
+        id="btn-dropdown"
+        class="lg:hidden md:hidden absolute right-[10%] top-1/2 -translate-y-1/2 text-xl cursor-pointer text-white"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
+    </nav>
+    <!-- section -->
+    <section class="payment-section px-[10%] mt-10 h-screen">
+      <div class="grid grid-cols-2 justify-between items-center">
+        <div class="grid grid-cols-2 px-5 gap-4">
+          <h1
+            class="col-span-2 mb-8 text-black font-semibold font-Outfit text-2xl"
+          >
+            Delivery Information
+          </h1>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Firstname"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Lastname"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Email Address"
+            class="col-span-2 px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="street"
+            class="col-span-2 px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="City"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Zip code"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Zip code"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Country"
+            class="px-3 py-2 rounded-md text-blue-500 font-normal bg-white border-none outline-none focus:shadow-sm focus:shadow-blue-500/50 caret-blue-500 transition-all duration-150"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 px-5 gap-4">
+          <h1
+            class="col-span-2 mb-8 text-black font-semibold font-Outfit text-2xl"
+          >
+            Cart totals
+          </h1>
+          <div
+            class="col-span-2 flex justify-between items-center border-b-2 border-gray-500"
+          >
+            <h3 class="font-medium text-xl">Subtotals</h3>
+            <p class="font-medium text-xl">$180</p>
+          </div>
+          <div
+            class="col-span-2 flex justify-between items-center border-b-2 border-gray-500"
+          >
+            <h3 class="font-medium text-xl italic">Delivery</h3>
+            <p class="font-medium text-xl italic">Free</p>
+          </div>
+          <div
+            class="col-span-2 flex justify-between items-center border-b-2 border-gray-500"
+          >
+            <h3 class="font-medium text-xl">Totals</h3>
+            <p class="font-medium text-xl">$180</p>
+          </div>
+          <button
+            class="px-3 text-white py-2 bg-blue-500 shadow-sm shadow-blue-500/50 border rounded-md outline-none border-blue-500 active:border-blue-600 active:bg-blue-600"
+          >
+            Process To Payment
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="w-full px-[10%] py-5 mt-10 bg-blue-900">
+      <div
+        class="w-full grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 gap-8"
+      >
+        <div class="">
+          <img src="imgs/logo.png" alt="" class="size-16" />
+          <p class="text-sm text-white text-start mt-5">
+            MR. Mey Soytry Who foundation Keyblock.
+          </p>
+          <div class="flex justify-start items-center mt-5 gap-5">
+            <span
+              class="size-8 bg-blue-700 hover:text-blue-500 hover:bg-white hover:shadow-md hover:shadow-white hover:translate-y-[-7px] transition-transform ease-linear duration-200 text-white rounded-md shadow-md shadow-blue-700/70 grid place-content-center"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span
+              class="size-8 bg-blue-700 hover:text-blue-500 hover:bg-white hover:shadow-md hover:shadow-white hover:translate-y-[-7px] transition-transform ease-linear duration-200 text-white rounded-md shadow-md shadow-blue-700/70 grid place-content-center"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </span>
+            <span
+              class="size-8 bg-blue-700 hover:text-blue-500 hover:bg-white hover:shadow-md hover:shadow-white hover:translate-y-[-7px] transition-transform ease-linear duration-200 text-white rounded-md shadow-md shadow-blue-700/70 grid place-content-center"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+        <div class="flex justify-start lg:justify-end">
+          <ul class="text-start">
+            <li class="text-xl text-white font-semibold uppercase">ACcount</li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white mt-4"
+            >
+              <a href="#">My Account</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Login / Registar</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Cart</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Whishlist</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex justify-start lg:justify-end">
+          <ul class="text-start">
+            <li class="text-xl text-white font-semibold uppercase">products</li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white mt-4"
+            >
+              <a href="#">Keyboard</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Keycap</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Switches</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Cables</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-start lg:justify-end">
+          <ul class="text-start">
+            <li class="text-xl text-white font-semibold uppercase">
+              Quick link
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white mt-4"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Terms of use</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">FAQ</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-start lg:justify-end">
+          <ul class="text-start">
+            <li class="text-xl text-white font-semibold uppercase">BLOG</li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white mt-4"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Terms of use</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">FAQ</a>
+            </li>
+            <li
+              class="text-sm text-gray-300 hover:translate-x-[10px] transition-all duration-300 hover:text-white"
+            >
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="h-[2px] w-full bg-gray-50 col-span-1 lg:col-span-5 md:col-span-2 sm:col-span-2"
+        />
+      </div>
+      <p class="text-white font-semibold text-start mt-1">&copy; Mey Soytry</p>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

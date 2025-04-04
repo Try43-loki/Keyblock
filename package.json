@@ -1,0 +1,16 @@
+{
+  "name": "keyblock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "keyblock": "npx tailwindcss -i ./src/input.css -o ./public/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "daisyui": "^4.12.10",
+    "tailwindcss": "^3.4.10"
+  }
+}
